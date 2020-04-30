@@ -7,7 +7,7 @@ class Admin::CategoriesController < ApplicationController
     end
 
     def new
-        @Category = Category.new
+        @category = Category.new
     end
 
     def create
@@ -19,6 +19,8 @@ class Admin::CategoriesController < ApplicationController
             render :new
         end
     end
+
+private
 
     def category_params
         params.require(:category).permit(
