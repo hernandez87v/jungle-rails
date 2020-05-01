@@ -29,4 +29,16 @@ class ApplicationController < ActionController::Base
     cookies[:cart]
   end
 
+    def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
+  helper_method :current_user
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == ENV['AUTH_NAME'] && password == ENV['AUTH_PASSWORD']
+    end
+  end
+
 end
