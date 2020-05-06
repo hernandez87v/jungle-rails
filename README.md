@@ -29,3 +29,24 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
 - Stripe
+
+## Features Added :heavy_plus_sign:
+
+- Sold Out Badge
+- Admin Categories
+- User Authentication
+
+## Enhancement :high_brightness:
+
+- Order Details Page
+
+## Bugs fixed :bug:
+
+- Missing Admin Security
+- Checking Out with Empty Cart
+
+## Automated testing RSPec :bar_chart:
+
+- Feature Spec: Home Page
+- Feature Spec: Product Details
+- Feature Spec: Add to Cart
